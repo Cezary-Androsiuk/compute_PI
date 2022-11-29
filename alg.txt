@@ -1,0 +1,27 @@
+
+part length:
+1: * 3
+2: * 6
+3: * 12
+4: * 24
+5: * 48
+6: * 96
+
+3* 2^(n-1)
+
+r=1
+
+1:
+    x1 = 1
+
+2:
+    pow_half_x1 = (x1/2)^2
+    h2_bottom = sqrt(r^2 - pow_half_x1)
+    h2_top = r - h2_bottom
+    x2 = sqrt(h2_top^2 + pow_half_x1)
+
+3:
+    pow_half_x2 = (x2/2)^2
+    h3_bottom = sqrt(r^2 - pow_half_x2)
+    h3_top = r - h3_bottom
+    x3 = sqrt(h3_top^2 + pow_half_x2)
